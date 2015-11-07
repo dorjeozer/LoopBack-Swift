@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B95FB441BEE8E6400585A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB431BEE8E6400585A19 /* AppDelegate.swift */; };
+		8B95FB491BEE8E6400585A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B95FB471BEE8E6400585A19 /* Main.storyboard */; };
+		8B95FB4B1BEE8E6400585A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B95FB4A1BEE8E6400585A19 /* Assets.xcassets */; };
+		8B95FB4E1BEE8E6400585A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B95FB4C1BEE8E6400585A19 /* LaunchScreen.storyboard */; };
+		8B95FB591BEE8E6400585A19 /* LoopBack_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB581BEE8E6400585A19 /* LoopBack_SwiftTests.swift */; };
+		8B95FB641BEE8E6400585A19 /* LoopBack_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB631BEE8E6400585A19 /* LoopBack_SwiftUITests.swift */; };
+		8B95FB7E1BEE903A00585A19 /* DatabaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB771BEE903A00585A19 /* DatabaseQuery.swift */; settings = {ASSET_TAGS = (); }; };
+		8B95FB7F1BEE903A00585A19 /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB781BEE903A00585A19 /* ModelClass.swift */; settings = {ASSET_TAGS = (); }; };
+		8B95FB801BEE903A00585A19 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB791BEE903A00585A19 /* Post.swift */; settings = {ASSET_TAGS = (); }; };
+		8B95FB821BEE903A00585A19 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB7B1BEE903A00585A19 /* PostTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8B95FB831BEE903A00585A19 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB7C1BEE903A00585A19 /* PostViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8B95FB841BEE903A00585A19 /* ShowPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95FB7D1BEE903A00585A19 /* ShowPostsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8B95FB861BEE912600585A19 /* LoopBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95FB751BEE8FF100585A19 /* LoopBack.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B95FB551BEE8E6400585A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B95FB381BEE8E6400585A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B95FB3F1BEE8E6400585A19;
+			remoteInfo = "LoopBack-Swift";
+		};
+		8B95FB601BEE8E6400585A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B95FB381BEE8E6400585A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B95FB3F1BEE8E6400585A19;
+			remoteInfo = "LoopBack-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B95FB401BEE8E6400585A19 /* LoopBack-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoopBack-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B95FB431BEE8E6400585A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B95FB481BEE8E6400585A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B95FB4A1BEE8E6400585A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B95FB4D1BEE8E6400585A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B95FB4F1BEE8E6400585A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B95FB541BEE8E6400585A19 /* LoopBack-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoopBack-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B95FB581BEE8E6400585A19 /* LoopBack_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopBack_SwiftTests.swift; sourceTree = "<group>"; };
+		8B95FB5A1BEE8E6400585A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B95FB5F1BEE8E6400585A19 /* LoopBack-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoopBack-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B95FB631BEE8E6400585A19 /* LoopBack_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopBack_SwiftUITests.swift; sourceTree = "<group>"; };
+		8B95FB651BEE8E6400585A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B95FB751BEE8FF100585A19 /* LoopBack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoopBack.framework; sourceTree = "<group>"; };
+		8B95FB771BEE903A00585A19 /* DatabaseQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseQuery.swift; sourceTree = "<group>"; };
+		8B95FB781BEE903A00585A19 /* ModelClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
+		8B95FB791BEE903A00585A19 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8B95FB7B1BEE903A00585A19 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		8B95FB7C1BEE903A00585A19 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		8B95FB7D1BEE903A00585A19 /* ShowPostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPostsTableViewController.swift; sourceTree = "<group>"; };
+		8B95FB8D1BEE922400585A19 /* LoopBack-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoopBack-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B95FB3D1BEE8E6400585A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B95FB861BEE912600585A19 /* LoopBack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B95FB511BEE8E6400585A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B95FB5C1BEE8E6400585A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B95FB371BEE8E6400585A19 = {
+			isa = PBXGroup;
+			children = (
+				8B95FB421BEE8E6400585A19 /* LoopBack-Swift */,
+				8B95FB571BEE8E6400585A19 /* LoopBack-SwiftTests */,
+				8B95FB621BEE8E6400585A19 /* LoopBack-SwiftUITests */,
+				8B95FB411BEE8E6400585A19 /* Products */,
+				8B95FB751BEE8FF100585A19 /* LoopBack.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		8B95FB411BEE8E6400585A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B95FB401BEE8E6400585A19 /* LoopBack-Swift.app */,
+				8B95FB541BEE8E6400585A19 /* LoopBack-SwiftTests.xctest */,
+				8B95FB5F1BEE8E6400585A19 /* LoopBack-SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B95FB421BEE8E6400585A19 /* LoopBack-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8B95FB741BEE8F7F00585A19 /* Supporting files */,
+				8BE7E95E1BEE9353001CFE58 /* Models */,
+				8B95FB471BEE8E6400585A19 /* Main.storyboard */,
+				8B95FB771BEE903A00585A19 /* DatabaseQuery.swift */,
+				8B95FB7B1BEE903A00585A19 /* PostTableViewCell.swift */,
+				8B95FB7C1BEE903A00585A19 /* PostViewController.swift */,
+				8B95FB7D1BEE903A00585A19 /* ShowPostsTableViewController.swift */,
+				8B95FB8D1BEE922400585A19 /* LoopBack-Swift-Bridging-Header.h */,
+			);
+			path = "LoopBack-Swift";
+			sourceTree = "<group>";
+		};
+		8B95FB571BEE8E6400585A19 /* LoopBack-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B95FB581BEE8E6400585A19 /* LoopBack_SwiftTests.swift */,
+				8B95FB5A1BEE8E6400585A19 /* Info.plist */,
+			);
+			path = "LoopBack-SwiftTests";
+			sourceTree = "<group>";
+		};
+		8B95FB621BEE8E6400585A19 /* LoopBack-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B95FB631BEE8E6400585A19 /* LoopBack_SwiftUITests.swift */,
+				8B95FB651BEE8E6400585A19 /* Info.plist */,
+			);
+			path = "LoopBack-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		8B95FB741BEE8F7F00585A19 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				8B95FB431BEE8E6400585A19 /* AppDelegate.swift */,
+				8B95FB4A1BEE8E6400585A19 /* Assets.xcassets */,
+				8B95FB4C1BEE8E6400585A19 /* LaunchScreen.storyboard */,
+				8B95FB4F1BEE8E6400585A19 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		8BE7E95E1BEE9353001CFE58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B95FB781BEE903A00585A19 /* ModelClass.swift */,
+				8B95FB791BEE903A00585A19 /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B95FB3F1BEE8E6400585A19 /* LoopBack-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B95FB681BEE8E6400585A19 /* Build configuration list for PBXNativeTarget "LoopBack-Swift" */;
+			buildPhases = (
+				8B95FB3C1BEE8E6400585A19 /* Sources */,
+				8B95FB3D1BEE8E6400585A19 /* Frameworks */,
+				8B95FB3E1BEE8E6400585A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoopBack-Swift";
+			productName = "LoopBack-Swift";
+			productReference = 8B95FB401BEE8E6400585A19 /* LoopBack-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B95FB531BEE8E6400585A19 /* LoopBack-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B95FB6B1BEE8E6400585A19 /* Build configuration list for PBXNativeTarget "LoopBack-SwiftTests" */;
+			buildPhases = (
+				8B95FB501BEE8E6400585A19 /* Sources */,
+				8B95FB511BEE8E6400585A19 /* Frameworks */,
+				8B95FB521BEE8E6400585A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B95FB561BEE8E6400585A19 /* PBXTargetDependency */,
+			);
+			name = "LoopBack-SwiftTests";
+			productName = "LoopBack-SwiftTests";
+			productReference = 8B95FB541BEE8E6400585A19 /* LoopBack-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B95FB5E1BEE8E6400585A19 /* LoopBack-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B95FB6E1BEE8E6400585A19 /* Build configuration list for PBXNativeTarget "LoopBack-SwiftUITests" */;
+			buildPhases = (
+				8B95FB5B1BEE8E6400585A19 /* Sources */,
+				8B95FB5C1BEE8E6400585A19 /* Frameworks */,
+				8B95FB5D1BEE8E6400585A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B95FB611BEE8E6400585A19 /* PBXTargetDependency */,
+			);
+			name = "LoopBack-SwiftUITests";
+			productName = "LoopBack-SwiftUITests";
+			productReference = 8B95FB5F1BEE8E6400585A19 /* LoopBack-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B95FB381BEE8E6400585A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jesse Sipola";
+				TargetAttributes = {
+					8B95FB3F1BEE8E6400585A19 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					8B95FB531BEE8E6400585A19 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8B95FB3F1BEE8E6400585A19;
+					};
+					8B95FB5E1BEE8E6400585A19 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8B95FB3F1BEE8E6400585A19;
+					};
+				};
+			};
+			buildConfigurationList = 8B95FB3B1BEE8E6400585A19 /* Build configuration list for PBXProject "LoopBack-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B95FB371BEE8E6400585A19;
+			productRefGroup = 8B95FB411BEE8E6400585A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B95FB3F1BEE8E6400585A19 /* LoopBack-Swift */,
+				8B95FB531BEE8E6400585A19 /* LoopBack-SwiftTests */,
+				8B95FB5E1BEE8E6400585A19 /* LoopBack-SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B95FB3E1BEE8E6400585A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B95FB4E1BEE8E6400585A19 /* LaunchScreen.storyboard in Resources */,
+				8B95FB4B1BEE8E6400585A19 /* Assets.xcassets in Resources */,
+				8B95FB491BEE8E6400585A19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B95FB521BEE8E6400585A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B95FB5D1BEE8E6400585A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B95FB3C1BEE8E6400585A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B95FB831BEE903A00585A19 /* PostViewController.swift in Sources */,
+				8B95FB841BEE903A00585A19 /* ShowPostsTableViewController.swift in Sources */,
+				8B95FB821BEE903A00585A19 /* PostTableViewCell.swift in Sources */,
+				8B95FB7E1BEE903A00585A19 /* DatabaseQuery.swift in Sources */,
+				8B95FB7F1BEE903A00585A19 /* ModelClass.swift in Sources */,
+				8B95FB441BEE8E6400585A19 /* AppDelegate.swift in Sources */,
+				8B95FB801BEE903A00585A19 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B95FB501BEE8E6400585A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B95FB591BEE8E6400585A19 /* LoopBack_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B95FB5B1BEE8E6400585A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B95FB641BEE8E6400585A19 /* LoopBack_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B95FB561BEE8E6400585A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B95FB3F1BEE8E6400585A19 /* LoopBack-Swift */;
+			targetProxy = 8B95FB551BEE8E6400585A19 /* PBXContainerItemProxy */;
+		};
+		8B95FB611BEE8E6400585A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B95FB3F1BEE8E6400585A19 /* LoopBack-Swift */;
+			targetProxy = 8B95FB601BEE8E6400585A19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B95FB471BEE8E6400585A19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B95FB481BEE8E6400585A19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B95FB4C1BEE8E6400585A19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B95FB4D1BEE8E6400585A19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B95FB661BEE8E6400585A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				"SWIFT_OBJC_BRIDGING_HEADER[sdk=iphoneos*]" = "Loopback-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B95FB671BEE8E6400585A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				"SWIFT_OBJC_BRIDGING_HEADER[sdk=iphoneos*]" = "Loopback-Swift-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B95FB691BEE8E6400585A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "LoopBack-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.no.LoopBack-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoopBack-Swift/LoopBack-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B95FB6A1BEE8E6400585A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "LoopBack-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.no.LoopBack-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoopBack-Swift/LoopBack-Swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		8B95FB6C1BEE8E6400585A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LoopBack-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.no.LoopBack-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoopBack-Swift.app/LoopBack-Swift";
+			};
+			name = Debug;
+		};
+		8B95FB6D1BEE8E6400585A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LoopBack-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.no.LoopBack-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoopBack-Swift.app/LoopBack-Swift";
+			};
+			name = Release;
+		};
+		8B95FB6F1BEE8E6400585A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LoopBack-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.no.LoopBack-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "LoopBack-Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8B95FB701BEE8E6400585A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LoopBack-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.no.LoopBack-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "LoopBack-Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B95FB3B1BEE8E6400585A19 /* Build configuration list for PBXProject "LoopBack-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B95FB661BEE8E6400585A19 /* Debug */,
+				8B95FB671BEE8E6400585A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B95FB681BEE8E6400585A19 /* Build configuration list for PBXNativeTarget "LoopBack-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B95FB691BEE8E6400585A19 /* Debug */,
+				8B95FB6A1BEE8E6400585A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B95FB6B1BEE8E6400585A19 /* Build configuration list for PBXNativeTarget "LoopBack-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B95FB6C1BEE8E6400585A19 /* Debug */,
+				8B95FB6D1BEE8E6400585A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B95FB6E1BEE8E6400585A19 /* Build configuration list for PBXNativeTarget "LoopBack-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B95FB6F1BEE8E6400585A19 /* Debug */,
+				8B95FB701BEE8E6400585A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B95FB381BEE8E6400585A19 /* Project object */;
+}
