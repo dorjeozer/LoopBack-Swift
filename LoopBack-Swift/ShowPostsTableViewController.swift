@@ -22,7 +22,7 @@ class ShowPostsTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 200
         
-        let query = DatabaseQuery(className: "posts")
+        let query = LBQuery(className: "Post")
         //query.whereKeyEquals("name", value: "something")
         //query.whereKeyEquals("post", value: "something")
         query.fetchResultsInBackground {

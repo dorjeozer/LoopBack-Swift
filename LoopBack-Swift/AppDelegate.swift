@@ -12,8 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    // Required variables
     var adapter: LBRESTAdapter?
-    var registeredModels: [String:ModelClass] = ["posts" : Post()]
+    var registerdClassTypes = [String : AnyClass]()
+    var registeredModels = [String : ModelClass]()
+    var registeredApiPlurals = [String : String]()
     
     func pathOfPlist() -> [String : AnyObject] {
         let dict = [String : AnyObject]()
@@ -32,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 adapter = LBRESTAdapter(URL: NSURL(string: rootPath))
             }
         }
+        Post().registerSubclass(pluralName: "posts")
         return true
     }
     

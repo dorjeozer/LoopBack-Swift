@@ -7,9 +7,6 @@
 //
 class Post: ModelClass {
     
-    override func getModelType() -> AnyClass? { return Post.self }
-    override func getModelName() -> String? { return "posts" }
-    
     var id: Int?
     var name: String! = ""
     var post: String! = ""
@@ -17,13 +14,14 @@ class Post: ModelClass {
     override init() {
         super.init()
     }
-    
-    init(name: String) {
-        self.name = name
-        super.init()
-    }
 
     override init!(repository: SLRepository!, parameters: [NSObject : AnyObject]!) {
         super.init(repository: repository, parameters: parameters)
     }
+    
+    override func loopbackClassName() -> String {
+        return "Post"
+    }
+    
+    override func getModelType() -> AnyClass? { return Post.self }
 }

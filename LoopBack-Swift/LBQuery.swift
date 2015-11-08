@@ -1,27 +1,35 @@
-//
-//  Utilities.swift
-//  
-//
-//  Created by Jesse Sipola on 6.11.2015.
-//  Copyright © 2015 . All rights reserved.
-//
-
 import Foundation
 
-class DatabaseQuery {
-    
+class LBQuery {
+    /**
+    Name of ModelClass subclass
+    */
     var className: String
-    var filters = [String : AnyObject]()
+    private var filters = [String : AnyObject]()
     
     init(className: String) {
         self.className = className
     }
-    
+    /**
+    Adds equals filter to the query.
+    - Parameter key: attribute name.
+    - Parameter value: attribute value.
+    */
     func whereKeyEquals(key: String, value: String) {
         self.filters["filter[where]"] = [key:value]
     }
-    
-    func fetchResultsInBackground(completion: ((results: [LBModel]?, error: NSError?) -> ())? = nil) {
+    /**
+    Callback to run after server response.
+    - Parameter results: Fetched results.
+    - Parameter error: Error.
+    */
+    typealias LBQueryResultsBlock = (results: [LBModel]?, error: NSError?) -> ()
+    /**
+    Sends request to the server and fetches asked models.
+    If no filters are attached to the query, returs all instances of the requested class.
+    - Parameter completion: Callback function.
+    */
+    func fetchResultsInBackground(completion: LBQueryResultsBlock? = nil) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate!
         
         let errorBlock = {
@@ -59,12 +67,14 @@ class DatabaseQuery {
         }
         
         if let adapter = appDelegate.adapter {
-            let productList = adapter.repositoryWithModelName(self.className)
-            if filters.isEmpty {
-                productList.allWithSuccess(successBlock, failure: errorBlock)
-            } else {
-                adapter.contract.addItem(SLRESTContractItem(pattern: "/posts", verb: "GET"), forMethod: "posts.filter")
-                productList.invokeStaticMethod("filter", parameters: filters, success: filterSuccessBlock, failure: errorBlock)
+            if let pluralName = appDelegate.registeredApiPlurals[self.className] {
+                let productList = adapter.repositoryWithModelName(pluralName)
+                if filters.isEmpty {
+                    productList.allWithSuccess(successBlock, failure: errorBlock)
+                } else {
+                    adapter.contract.addItem(SLRESTContractItem(pattern: "/\(pluralName)", verb: "GET"), forMethod: "\(pluralName).filter")
+                    productList.invokeStaticMethod("filter", parameters: filters, success: filterSuccessBlock, failure: errorBlock)
+                }
             }
         }
     }
