@@ -1,7 +1,7 @@
 # LoopBack-Swift
 Parse.com like LoopBack.io implementation for Swift.
 
-At the moment supports for saving and fetching. 
+At the moment supports saving and fetching. 
 
 ## Examples
 
